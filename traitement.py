@@ -2,9 +2,11 @@ from sys import argv
 import cv2
 from ultralytics import YOLO
 
+train_dataset_name = "all_objects_dataset"
+model_name = f"yolo11n_img1024_ep20_{train_dataset_name}"
+model_path = f"train_{train_dataset_name}/{model_name}/weights/best.pt"
+
 video_file = f"videos/{argv[1]}" if len(argv) > 1 else 0
-# model_path = "runs/detect/train/weights/best.pt"
-model_path = "all_classes/yolo11n_img1024_ep20/weights/best.pt"
 
 cap = cv2.VideoCapture(video_file)
 cv2.namedWindow('Detection', cv2.WINDOW_NORMAL)
