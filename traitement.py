@@ -2,7 +2,7 @@ from sys import argv
 import cv2
 from ultralytics import YOLO
 
-video_file = f"{argv[1]}" if len(argv) > 1 else 0
+video_file = f"videos/{argv[1]}" if len(argv) > 1 else 0
 # model_path = "runs/detect/train/weights/best.pt"
 model_path = "all_classes/yolo11n_img1024_ep20/weights/best.pt"
 

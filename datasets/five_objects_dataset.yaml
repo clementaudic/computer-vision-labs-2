@@ -1,4 +1,4 @@
-path: five_objects_dataset
+path: datasets/five_objects_dataset
 train: train/images
 val: val/images
 

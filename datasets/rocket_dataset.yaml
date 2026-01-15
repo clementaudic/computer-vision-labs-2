@@ -1,4 +1,4 @@
-path: rocket_dataset
+path: datasets/rocket_dataset
 train: train/images
 val: val/images
 
